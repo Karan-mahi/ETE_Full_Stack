@@ -26,7 +26,7 @@ app.set("view engine", "ejs");
 const db = mysql.createConnection({
   host: process.env.HOST,
   user: process.env.DATABASE_USER,
-  password: "",
+  password: process.env.PASSWORD,
   port: process.env.PORT,
 });
 

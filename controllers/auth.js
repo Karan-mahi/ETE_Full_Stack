@@ -10,7 +10,7 @@ const db = mysql.createConnection({
   user: process.env.DATABASE_USER,
   password: process.env.PASSWORD,
   database: process.env.DATABASE,
-  port: 3307, //yechange krna hai
+  port: process.env.PORT, //yechange krna hai
 });
 exports.login = async (req, res) => {
   try {
